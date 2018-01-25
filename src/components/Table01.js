@@ -2,8 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import {Table} from 'antd';
 import PropTypes from 'prop-types';
-function Table01({dispatch,list:dataSource}) {  
-  console.log('componentData:'+dataSource)
+function Table01({dispatch,list:dataSource}) { 
       const columns = [
         {
           title: 'id',
@@ -36,7 +35,6 @@ function Table01({dispatch,list:dataSource}) {
 
 function mapStateToProps(state) {
   const {list} = state.table01;
-  console.log('state:'+JSON.stringify(list))
   return {
     list
   };

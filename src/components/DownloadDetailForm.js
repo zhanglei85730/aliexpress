@@ -45,8 +45,8 @@ class DownloadDetailForm extends React.Component {
       <Form layout="inline" onSubmit={this.handleSubmit.bind(this)} >
         <FormItem>
           {getFieldDecorator('id', {
-            rules: [{ required: true, message: '情输入部门' }],
-          })(<Input  placeholder="情输入部门" />)}
+            rules: [{ required: true, message: '请输入搜索ID' }],
+          })(<Input  placeholder="请输入搜索ID" />)}
         </FormItem>   
         <FormItem>
           {getFieldDecorator('age', {
